@@ -27,10 +27,19 @@ AWS_SECRET_ACCESS_KEY_ENV_KEY = "AWS_SECRET_ACCESS_KEY"
 
 REGION_NAME = "us-east-1"
 
+"""
+Data Ingestion related constants start with `DATA_INGESTION' VAR NAME
+"""
+
+DATA_INGESTION_COLLECTION_NAME: str = "Proj1-Data"
+DATA_INGESTION_DIR_NAME: str = "data_ingestion"
+DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
+DATA_INGESTION_INGESTED_DIR: str = "ingested"
+DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.25
 
 
 """
-Data Ingestion related constants start with `DATA_INGESTION' VAR NAME
+Data Validation related constants start with `DATA_VALIDATION' VAR NAME
 """
 
 DATA_VALIDATION_DIR_NAME: str = "data_validation"

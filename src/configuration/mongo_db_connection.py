@@ -6,7 +6,9 @@ import certifi
 from src.exception import MyException
 from src.logger import logging
 from src.constants import DATABASE_NAME, MONGODB_URI_KEY
+from dotenv import load_dotenv
 
+load_dotenv()
 
 ca = certifi.where()
 
@@ -46,7 +48,7 @@ class MongoClient:
     
     try:
       if MongoClient.client is None:
-        mongo_db_url = os.getenv(MONGODB_URI_KEY)
+        mongo_db_url = MONGODB_URI_KEY              # os.getenv(MONGODB_URI_KEY)
         if mongo_db_url is None:
           raise Exception(f"Environment variable '{MONGODB_URI_KEY}' not set.")
         

@@ -150,10 +150,11 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
+src\configuration\.env
 # Pyre type checker
 .pyre/
 
+artifact/
 # pytype static type analyzer
 .pytype/
 
